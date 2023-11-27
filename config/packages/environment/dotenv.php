@@ -8,4 +8,3 @@ $dotenv = new Dotenv();
  $dotenv->loadEnv(__DIR__.'/../../../.env');
 // $data = $dotenv->loadEnv(dirname(__DIR__, 3).'/.env');
 
-var_dump($_SERVER);

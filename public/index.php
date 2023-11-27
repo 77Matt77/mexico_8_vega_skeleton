@@ -18,6 +18,9 @@
      * -----------------------------------------------------------------------------------
      */
 
+use Psr\Log\LoggerInterface;
 
     //1- Amorçage de l'application (charger les fichiers de configuration );
      require __Dir__ ."/../config/bootstrap.php";
+
+     
