@@ -1,0 +1,28 @@
+{
+    "name": "vega/skeleton",
+    "description": "Learn poo in php building a traditional web framework",
+    "type": "projet",
+    "license": "MIT",
+    "keywords": ["php8", "dwwm", "nextformation","poo", "web", "framework", "vega"],
+    "homepage": "https://github.com/77Matt77/mexico_8_vega_skeleton",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Matthieu faucheux",
+            "email": "matthieu7devweb@gmail.com",
+            "homepage": "https://github.com/77Matt77",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {"optimize-autoloader": true,
+    "sort-packages": true},
+    "require": {
+        "symfony/dotenv": "^6.3"
+    }
+}

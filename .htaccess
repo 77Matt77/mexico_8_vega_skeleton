@@ -1,0 +1,11 @@
+<IfModule mod_negotiation.c>
+    Options -Multiviews -Indexes
+</IfModule>
+
+<IfModule mod_rewrite.c>
+# Active l'exécution du moteur de réécriture
+RewriteEngine on
+
+#Rediriger l'utilisateur vers l'idex du dossier public
+RewriteRule ^(.*)$ public/index.php [L]
+</IfModule>
