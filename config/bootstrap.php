@@ -28,6 +28,8 @@
     //5- Charger le débogueur
     require __DIR__ ."/packages/error_handler/whoops.php";
 
+    require __DIR__ ."/packages/twig/twig.php";
+
 
 
     

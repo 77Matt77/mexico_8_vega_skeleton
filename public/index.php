@@ -28,7 +28,7 @@ use Symfony\Component\HttpFoundation\Request;
      // echo c;
 
      //2- Créer une nouvelle instance du noyau de l'application
-   $Kernel = new Kernel();
+   $Kernel = new Kernel($container);
 
    //3- Récupérer les données de la requête du client
    $request = Request::createFromGlobals();

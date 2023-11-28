@@ -24,13 +24,21 @@
     "config": {"optimize-autoloader": true,
     "sort-packages": true},
     "require": {
+        "eredost/attributes-router": "^1.0",
         "monolog/monolog": "^3.5",
         "php-di/php-di": "^7.0",
         "symfony/dotenv": "^6.3",
-        "symfony/http-foundation": "^6.3"
+        "symfony/http-foundation": "^6.3",
+        "twig/twig": "^3.8"
     },
     "require-dev": {
         "filp/whoops": "^2.15",
         "symfony/var-dumper": "^6.3"
-    }
+    },
+    "repositories": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/Eredost/attributes-router.git"
+        }
+     ]
 }
