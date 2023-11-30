@@ -12,8 +12,8 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* index.html.twig */
-class __TwigTemplate_5b511e8b10c328a503ac3c8bca2c5deb extends Template
+/* login.html.twig */
+class __TwigTemplate_e0ff7e4b40d8e06f5d616ee3ca29f543 extends Template
 {
     private $source;
     private $macros = [];
@@ -38,7 +38,7 @@ class __TwigTemplate_5b511e8b10c328a503ac3c8bca2c5deb extends Template
     protected function doDisplay(array $context, array $blocks = [])
     {
         $macros = $this->macros;
-        $this->parent = $this->loadTemplate("themes/base.html.twig", "index.html.twig", 1);
+        $this->parent = $this->loadTemplate("themes/base.html.twig", "login.html.twig", 1);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
@@ -47,7 +47,7 @@ class __TwigTemplate_5b511e8b10c328a503ac3c8bca2c5deb extends Template
     {
         $macros = $this->macros;
         // line 4
-        echo "<h1 class=\"text-center my-3 display-5\">Welcome</h1>
+        echo "<h1 class=\"text-center my-3 diplay-5\">Connexion</h1>
 ";
     }
 
@@ -56,7 +56,7 @@ class __TwigTemplate_5b511e8b10c328a503ac3c8bca2c5deb extends Template
      */
     public function getTemplateName()
     {
-        return "index.html.twig";
+        return "login.html.twig";
     }
 
     /**
@@ -77,6 +77,6 @@ class __TwigTemplate_5b511e8b10c328a503ac3c8bca2c5deb extends Template
 
     public function getSourceContext()
     {
-        return new Source("", "index.html.twig", "C:\\xampp\\htdocs\\8_vega_skeleton\\templates\\index.html.twig");
+        return new Source("", "login.html.twig", "C:\\xampp\\htdocs\\8_vega_skeleton\\templates\\login.html.twig");
     }
 }

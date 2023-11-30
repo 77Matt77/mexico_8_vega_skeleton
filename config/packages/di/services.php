@@ -1,17 +1,22 @@
 <?php
 
+use App\Controller\LoginController;
+use App\Controller\RegisterController;
+use App\Controller\WelcomeController;
 use Twig\Environment;
 use AttributesRouter\Router;
 use Twig\Loader\FilesystemLoader;
-use App\Controller\MainController;
+
 
 return [
 
 "controllers" => [
-    MainController::class
+   WelcomeController::class,
+   LoginController::class,
+   RegisterController::class
 ],
 
-Router::class => DI\create(Router::class)
+Router::class => DI\create()
               ->constructor(DI\get("controllers")),
 
 Environment::class =>function(){

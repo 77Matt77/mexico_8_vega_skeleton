@@ -27,11 +27,10 @@ use Symfony\Component\HttpFoundation\Response;
          */
         public function handle(Request $request): Response
         {
-
             $this->container->set(Request::class, $request);
-
+            
             $router = $this->container->get(Router::class);
-
+            
             $routerResponse = $router->match();
 
             $response = $this->dispatch($routerResponse);            
@@ -55,8 +54,10 @@ use Symfony\Component\HttpFoundation\Response;
         
             if (null === $params) {
                 return $this->container->call([$controller, $method]);
+                
             }
         
             return $this->container->call([$controller, $method], [...$params]);
+            
         }
     }        
